@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "name": "gcc",
+            "includePath": [
+                "${workspaceRoot}",
+                "E:/mingw/include",
+                "E:/mingw/lib/gcc/mingw32/6.3.0/include",
+                "E:/mingw/lib/gcc/mingw32/6.3.0/include/c++",
+                "E:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32"
+            ],
+            "defines": [
+                "_WIN32",
+                "__MINGW32__",
+                "__GNUC__=7",
+                "_DEBUG",
+                "UNICODE",
+                "__cdecl=__attribute__((__cdecl__))"
+            ],
+            "intelliSenseMode": "gcc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceRoot}",
+                    "E:/mingw/include",
+                    "E:/mingw/lib/gcc/mingw32/6.3.0/include",
+                    "E:/mingw/lib/gcc/mingw32/6.3.0/include/c++",
+                    "E:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        }
+    ],
+    "version": 4
+}

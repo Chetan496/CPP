@@ -1,53 +1,26 @@
-/*{
-    "version": "0.1.0",
-    "taskName": "build",
-    "command": "E:/mingw/bin/g++.exe",
-    "isShellCommand": true,
-    "isDefault": true,
-    "kind": "build",
-    "showOutput": "always",
-    "watch": true,
-    "args": ["-Wall", "-std=c++17", "-g", "-IE:/mingw/include", "*.cpp", "-lfreeglut", "-lglu32", "-lopengl32"],
-    "problemMatcher":"$gcc"
-}*/
-
 {
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
             "type": "shell",
-            "command": "E:/mingw/bin/mingw32-make.exe",
-            "args": [],
-            "problemMatcher": "$gcc",
+            "label": "g++.exe build active file",
+            "command": "D:\\SoftwareInstallations\\mingw64\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "D:\\SoftwareInstallations\\mingw64\\mingw64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
             "group": {
                 "kind": "build",
                 "isDefault": true
             }
-        },
-        {
-            "label": "clean",
-            "type": "shell",
-            "command": "E:/mingw/bin/mingw32-make.exe",
-            "args": [
-                "clean"
-            ],
-            "presentation": {
-                "reveal": "always",
-                "panel": "new"
-            },
-            "problemMatcher": []
-        //},
-        // {
-        //     "label": "run",
-        //     "type": "shell",
-        //     "command": "a.exe",
-        //     "args": [],
-        //     "presentation": {
-        //         "reveal": "always",
-        //         "panel": "new"
-        //     },
-        //     "problemMatcher": []
         }
     ]
 }

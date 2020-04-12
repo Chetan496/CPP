@@ -1,4 +1,4 @@
-## C++ for solving programming problems in VSCode ##
+## C++ programs ##
 
 This repo has some C++ programs developed. 
 Prerequisites: install MingW GCC , G++ compiler in a directory, install Visual studio code with C++ extensions.
